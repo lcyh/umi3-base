@@ -1,0 +1,24 @@
+.basic-layout-wrapper {
+  .spin-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important;
+    max-height: inherit !important;
+    background: #fff;
+  }
+  .basic-layout-content {
+    height: 100vh;
+    background-color: #fff;
+    :global {
+      .ant-layout {
+        min-height: initial !important;
+        background-color: #fff;
+        .ant-layout-content {
+          min-height: initial !important;
+        }
+      }
+    }
+  }
+}
